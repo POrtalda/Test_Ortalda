@@ -1,0 +1,74 @@
+@keyframes orario {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes antiorario {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+#img1  {
+    animation: orario 5s linear infinite; /* Ruota le immagini in modo continuo */
+    margin-top: 30px;
+}
+
+#img2{
+    animation: antiorario 5s linear infinite; /* Ruota le immagini in modo continuo */
+    margin-top: 30px;
+}
+
+
+div{
+    position: relative;
+}
+
+#img2{
+    position: absolute;
+    right: 0;
+    position: fixed;
+    z-index: 2;
+}
+
+#img1{
+    position: fixed;
+    z-index: 2;
+}
+
+h1{
+    color: rgb(249, 249, 250) !important;
+    background-color: rgb(45, 5, 119);    
+    text-align: center;
+    position: relative;
+    z-index: 4;    
+    
+}
+
+button{
+    position: relative;
+    z-index: 4;    
+}
+
+#testo{
+    margin-top: 180px;
+}
+
+.azzurro {
+    background-color: rgb(31, 200, 230);
+    color: aliceblue;
+}
+
+.stileParagrafo{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+}
+
